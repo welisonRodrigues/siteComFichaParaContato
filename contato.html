@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu site</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+</head>
+<body>
+
+    <header>
+         <section>
+            <!--insere a imagem no site, para acessar ela basta clicar "ctrl + espaço" -->
+             <img src="1684888555576 (1).png" alt="Logo da empresa company" width="200px"/>
+           
+             <!--inicio menu site-->  
+            
+             <nav class="botao">
+                  <!--cria uma lista com marcadores-->
+                  <ul>
+                     <li class="botao-destaque" >
+                        <a href="index.html">Ínicio
+
+                        </a>
+                     </li>
+                     <li class="botao-destaque">
+                     <!--criação de um caminho que leva pra outro arquivo-->
+                        <a href="contato.html">Contato
+
+                        </a>
+                     </li>
+                  </ul>
+
+               </nav> 
+               <!--fim menu site-->
+         </section>
+    </header>
+
+    <main>
+        <section class="sobre">
+            <article>
+                <h1>Formulário de contato</h1>
+                <p>Preencha os dados no formulário e envie sua mensagem de contato.</p>
+                <p class="linha">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue. </p>
+               
+                <fieldset class="agrupamento">
+
+                    <legend><h5>Dados de contato</h5></legend>
+
+                    <form class="agrupamento-botao"  id="frmInscricao"  action="contato.php" method="POST">
+
+                     <label >Nome:</label><br>
+                     <input type="text" required="required" id="txtNome" maxlength="100" size="50" class="entrada"><br><br>
+
+                     <label >Sexo:</label><br><br>
+                     <label  class="agrupamento">Masculino</label>
+                     <input type="radio" name="rdoSexo" value="M" required="required"  class="agrupamento"><br><br>
+                     
+                     <label class="agrupamento">Feminino</label>
+                     <input type="radio" name="rdoSexo" value="F" required="required"  class="agrupamento" >
+                     
+                     
+                    <br><br>
+
+                     <label >Endereço:</label><br>
+                     <input type="text" required="required" id="txtEndereco" maxlength="100" size="50" class="entrada"><br><br>
+                     
+
+                     <label >Estado:</label><br>
+                     <select id="cbxEstado" required="required" class="entrada">
+                        <option value="">-Selecione-</option>
+                        <option value="1">SC</option>
+                        <option value="2">MG</option>
+                     </select><br><br>
+
+                     <label >Cidade:</label><br>
+                     <select id="cbxCidade" required="required" class="entrada">
+                        <option value="">-Selecione-</option>
+                        <option value="1">Florianópolis</option>
+                        <option value="2">Belo Horizonte</option>
+                     </select><br><br>
+
+                     <label >Celular:</label><br>
+                     <input type="number" id="txtTel" required="required" placeholder="(##) #####-####" class="entrada"><br><br>
+
+                     <label >E-mail:</label><br>
+                     <input type="email" id="txtEmail" required="required" size="50" class="entrada"><br><br>
+
+                     <label>Áreas de interesse:</label><br>
+                     <input type="checkbox" value="JavaScript" id="txtInteresse"  class="entrada">
+                     <label>JavaScript</label>
+
+                     <input type="checkbox" value="CSS" id="txtInteresse" class="entrada">
+                     <label>CSS</label>
+
+                     <input type="checkbox" value="HTML" id="txtInteresse" class="entrada">
+                     <lab</div>HTML</label><br><br>
+
+                     <label  >Mensagem:</label><br> 
+                    <div>
+                       
+                        <input type="text" required="required" id="txtMensagem" maxlength="100" size="50" class="entrada"><br><br>
+                    </div>  <br>
+
+                     <div class="rotulo" >
+
+                      <input type="button" value="Enviar" required="required" class="entrada">
+
+                    </div>
+
+                    </form>
+                    
+
+                </fieldset>   
+                
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li class="rotulo">
+                <!--logo de contato sem ida-->
+                <a href="#">
+                    <img src="insta.webp" alt="logo instagram" width="25px">
+                </a>                
+               
+            </li>
+            <li class="rotulo">
+                <a href="#">
+                    <img src="facebook.png" alt="logo face" width="25px">
+                </a> </li>
+            <li class="rotulo"> 
+                <a href="#">
+                    <img src="whats.webp" alt="logo whats" width="25px">
+                </a></li>
+        </ul>
+    </footer>
+
+    
+</body>
+</html>
